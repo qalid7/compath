@@ -1,0 +1,7 @@
+results_dir /mnt/scratch/DMP/COPAINGE/tracerx/John_Variable_thickness/results/detection
+file_name_pattern *.ndpi
+date 20171128
+in_feat_dim 4
+exp_dir /mnt/scratch/users/molecpath/sraza/scripts/MyCodes/TracerX/detection/20171013SCCNN_detection/ExpDir-HE
+tissue_segment_dir /mnt/scratch/DMP/COPAINGE/tracerx/John_Variable_thickness/results/tissue_segmentation/20171031
+preprocessed_dir /mnt/scratch/DMP/COPAINGE/tracerx/John_Variable_thickness/results/detection/20171128
