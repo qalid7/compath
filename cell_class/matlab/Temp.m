@@ -1,0 +1,1 @@
+colorcodes = readtable(fullfile(fileparts(mfilename('fullpath')), 'colorcodes', colorfile));

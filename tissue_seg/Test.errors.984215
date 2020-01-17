@@ -1,0 +1,26 @@
+2017-11-17 09:43:13.362767: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-17 09:43:13.363496: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-17 09:43:13.363559: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-17 09:43:13.363593: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-17 09:43:13.363624: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-11-17 09:43:13.757749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:955] Found device 0 with properties: 
+name: Tesla P100-PCIE-16GB
+major: 6 minor: 0 memoryClockRate (GHz) 1.3285
+pciBusID 0000:04:00.0
+Total memory: 15.89GiB
+Free memory: 15.60GiB
+2017-11-17 09:43:13.757815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:976] DMA: 0 
+2017-11-17 09:43:13.760770: I tensorflow/core/common_runtime/gpu/gpu_device.cc:986] 0:   Y 
+2017-11-17 09:43:13.760811: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1045] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla P100-PCIE-16GB, pci bus id: 0000:04:00.0)
+2017-11-20 09:56:17.265871: E tensorflow/core/util/events_writer.cc:162] The events file ExpDir-HE/logs/train/events.out.tfevents.1510911797.gpu01.prv.davros.compute.estate has disappeared.
+2017-11-20 09:56:17.295534: E tensorflow/core/util/events_writer.cc:131] Failed to flush 5 events to ExpDir-HE/logs/train/events.out.tfevents.1510911797.gpu01.prv.davros.compute.estate
+Traceback (most recent call last):
+  File "Train_Network_Main_Davros.py", line 76, in <module>
+    Network = Network.run_training(opts=opts)
+  File "/mnt/scratch/users/molecpath/sraza/scripts/MyCodes/TracerX/tissue_segmentation/20171110-TissueSegmentation/mimo_net.py", line 77, in run_training
+    network = run_training.run_training(network=self, opts=opts)
+  File "/mnt/scratch/users/molecpath/sraza/scripts/MyCodes/TracerX/tissue_segmentation/20171110-TissueSegmentation/subpackages/run_training.py", line 134, in run_training
+    sio.savemat(os.path.join(opts.exp_dir, 'inter_train.mat'), inter)
+  File "/home/molecpath/sraza/.conda/envs/tensorflowGPU1p3/lib/python3.5/site-packages/scipy/io/matlab/mio.py", line 193, in savemat
+    file_stream = open(file_name, 'wb')
+FileNotFoundError: [Errno 2] No such file or directory: 'ExpDir-HE/inter_train.mat'

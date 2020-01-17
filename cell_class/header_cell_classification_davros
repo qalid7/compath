@@ -1,0 +1,15 @@
+#BSUB -J "###NAME###"
+#BSUB -P DMPYXYAAO
+#BSUB -e errorsclassification/###NAME###.errors.%J
+#BSUB -o outputsclassification/###NAME###.output.%J
+#BSUB -n 1
+#BSUB -N
+#BSUB -W 50:00
+#BSUB -R "span[hosts=1]"
+#BSUB -q normal
+#BSUB -u shan.raza@icr.ac.uk
+module load anaconda/3/4.3.0
+module load gcc/4.9.3
+source activate tfdavrosCPU1p3
+cd /mnt/scratch/users/molecpath/sraza/scripts/MyCodes/TracerX/classification/20171019-SCCNNClassifier
+python Generate_Output_Davros.py "###DIRNAME###" "###NAME###"

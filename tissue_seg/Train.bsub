@@ -1,0 +1,11 @@
+#BSUB -J "Train_Tissue_Segmentation_IHC"
+#BSUB -P gpu-service
+#BSUB -q gpu
+#BSUB -e Test.errors.%J
+#BSUB -o Test.output.%J
+#BSUB -W 200:00
+#BSUB -R "rusage[ngpus_excl_p=1]"
+#BSUB -u shan.raza@icr.ac.uk
+module load anaconda/3/4.3.0
+source activate tensorflowGPU1p3
+python Train_Network_Main_Davros.py /mnt/scratch/users/molecpath/sraza/scripts/MyCodes/TracerX/tissue_segmentation/20171110-TissueSegmentation/HE parameters-HE.txt 
