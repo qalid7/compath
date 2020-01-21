@@ -54,6 +54,12 @@ module load openslide/3.4.1
 pip install openslide-python
 source deactivate CWS
 ```
+## Example data
+
+Under data/example we provide a sample xx. This is to compare against your .
+
+* example/data: 
+* example/results:  
 
 ## Post processsing
 
