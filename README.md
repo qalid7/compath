@@ -5,7 +5,17 @@ Deep learning pipeline repository for our paper "xxxx" published in xxx. The pip
   <img width="800" src="https://github.com/qalid7/compath/blob/master/common/images/pipeline.png">
 </p>
 
+The steps can be further explained as follows: 
 
+* Tiling: to convert a raw microscopy image into 2000x2000 tiles.  
+* Tissue segmentation: 
+
+The above two steps can be skipped, e.g. if you already have small sections of a H&E as JPEG tiles, or if you don't think there is  
+
+* Cell detection: 
+* Cell classification: 
+
+Both cell detection and classification algorithms contain pre processing routines. 
 
 ## Trained models
 
@@ -44,6 +54,10 @@ module load openslide/3.4.1
 pip install openslide-python
 source deactivate CWS
 ```
+
+## Post processsing
+
+
 ## Test data (LATTICe-A annotations) 
 <p align="center">
   <img height="150" src="https://github.com/qalid7/compath/blob/master/common/images/ann_data.png">
