@@ -3,7 +3,7 @@ Deep learning pipeline repository for our paper "xxxx" published in xxx. The pip
 
 * Trained models
 
-Trained models (checkpoint files) can be downloaded from [here] (https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). 
+Trained models (checkpoint files) can be downloaded from [here](https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). 
 
 
 * Python env (linux/cluster): 
