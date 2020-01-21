@@ -56,7 +56,7 @@ source deactivate CWS
 ```
 
 ## Post processsing
-
+A likely scenario is to see a lot of rubbish being detected outside the tissue regions. Simply because our algorithm . Though this should be taken care of using 
 
 
 ## Test data (LATTICe-A annotations) 
@@ -64,7 +64,7 @@ source deactivate CWS
   <img height="150" src="https://github.com/qalid7/compath/blob/master/common/images/ann_data.png">
 </p>
 
-Single-cell pathology annotations from the LATTICe-A cohort are provided under data. This test dataset represents one of many external validations performed in the paper.  
+Single-cell pathology annotations from the LATTICe-A cohort are provided under data. This test dataset represents one of several external validations performed in the paper.  
 
 ## Training 
 
