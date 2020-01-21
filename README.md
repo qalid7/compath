@@ -8,7 +8,7 @@ Trained models (checkpoint files) can be downloaded from: https://www.dropbox.co
 
 * Python env (linux/cluster): 
 
-⋅⋅⋅ For cell detection and classification: 
+⋅⋅⋅For cell detection and classification: 
 
 ```
 module load anaconda/3/4.4.0
