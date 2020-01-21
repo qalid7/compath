@@ -68,4 +68,4 @@ Single-cell pathology annotations from the LATTICe-A cohort are provided under d
 
 ## Training 
 
-We highly recommend using our more recent versions (updated codes, tf 1.13) of this pipeline to retrain data from scratch. This is provided in a seprate [repo](xxxxxxxxxxxxxxx). 
+We highly recommend using our more recent version (updated codes, tf version 1.13) of this pipeline if you wish to train models from scratch. This is provided in a seprate [repo](xxxxxxxxxxxxxxx). 
