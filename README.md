@@ -5,7 +5,7 @@ Deep learning pipeline repository for our paper "xxxx" published in xxx. The pip
 If you use this pipeline or some of its steps, please cite: 
 * AbdulJabbar, K. et al 2020 
 
-## Description 
+## Highlights 
 <p align="center">
   <img width="800" src="https://github.com/qalid7/compath/blob/master/common/images/pipeline.png">
 </p>
@@ -81,3 +81,5 @@ Single-cell pathology annotations from the LATTICe-A cohort are provided under d
 ## Training 
 
 We highly recommend using our more recent version (updated codes, tf version 1.13) of this pipeline if you wish to train models from scratch. This will be provided in a seprate [repo](xxxxxxxxxxxxxxx). 
+
+## License 
