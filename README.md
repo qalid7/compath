@@ -5,6 +5,11 @@ Deep learning pipeline repository for our paper "xxxx" published in xxx. The pip
   <img width="800" src="https://github.com/qalid7/compath/blob/master/common/images/pipeline.png">
 </p>
 
+## Citation
+
+If you use this pipeline or some of its teps, please cite: 
+* AbdulJabbar, K. et al 2020 
+
 The steps can be further explained as follows: 
 
 * Tiling: to convert a raw microscopy image into 2000x2000 tiles.  
