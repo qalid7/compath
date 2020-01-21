@@ -1,14 +1,14 @@
 # H&E-based single-cell identification pipeline
 Deep learning pipeline repository for our paper "xxxx" published in xxx. The pipeline accepts a standard H&E (e.g. ndpi format) and outputs  The SCCNN method was first published in 10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation doi.org/10.1016/j.media.2018.12.003
 
-* Trained models
+## Trained models
 
-Trained models (checkpoint files) can be downloaded from [here](https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). 
+Trained models (checkpoint files) can be downloaded from [here](https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). You need to copy each 'checkpoint' folder from the dropbox link to the respective folder in this repositry (e.g. cell_class, etc). 
 
 
-* Python env (linux/cluster): 
+## Python-TensorFlow virtual envs (linux/cluster) 
 
-⋅⋅⋅For cell detection and classification: 
+* For cell detection and classification: 
 
 ```
 module load anaconda/3/4.4.0
@@ -24,8 +24,12 @@ conda deactivate
 
 #check by running python then 'import tensorflow as tf'
 ```
-⋅⋅⋅ For tiling raw ndpi files: 
+* For tiling raw ndpi files: 
 
 ```
 xxx
 ```
+
+## Training 
+
+We highly recommend using our more recent versions (updated codes, tf 1.13) of this pipeline to retrain data from scratch. This is provided in a seprate [repo](xxxxxxxxxxxxxxx). 
