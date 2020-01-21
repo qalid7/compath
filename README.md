@@ -15,7 +15,7 @@ The above two steps can be skipped, e.g. if you already have small sections of a
 * Cell detection: 
 * Cell classification: 
 
-Both cell detection and classification algorithms contain pre processing routines. 
+Both cell detection and classification algorithms contain pre processing routines. You can turn this off/on or modify it from: 
 
 ## Trained models
 
