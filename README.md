@@ -27,7 +27,16 @@ conda deactivate
 * For tiling raw ndpi files: 
 
 ```
-xxx
+module load anaconda/3/4.4.0
+conda create –n CWS python=3.5
+source activate CWS
+conda install numpy
+module load java/sun8/1.8.0u66
+pip install 'python-bioformats<=1.3.0'
+module load openjpeg/2.1.2
+module load openslide/3.4.1
+pip install openslide-python
+source deactivate CWS
 ```
 
 ## Training 
