@@ -39,8 +39,9 @@ pip install openslide-python
 source deactivate CWS
 ```
 ## Test data (LATTICe-A annotations) 
-![alt text](https://github.com/qalid7/compath/blob/master/common/images/ann_data.png "sample annotations")
-
+<p align="center">
+  <img width="600" height="200" src="https://github.com/qalid7/compath/blob/master/common/images/ann_data.png">
+</p>
 
 ## Training 
 
