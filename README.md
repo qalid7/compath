@@ -1,14 +1,14 @@
 # H&E-based single-cell identification pipeline
 Deep learning pipeline repository for our paper "xxxx" published in xxx. The pipeline accepts a standard H&E (e.g. ndpi format) and outputs  The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
 
+## Citation
+If you use this pipeline or some of its steps, please cite: 
+* AbdulJabbar, K. et al 2020 
+
+## Description 
 <p align="center">
   <img width="800" src="https://github.com/qalid7/compath/blob/master/common/images/pipeline.png">
 </p>
-
-## Citation
-
-If you use this pipeline or some of its teps, please cite: 
-* AbdulJabbar, K. et al 2020 
 
 The steps can be further explained as follows: 
 
