@@ -10,7 +10,7 @@ The steps can be further explained as follows:
 * Tiling: to convert a raw microscopy image into 2000x2000 tiles.  
 * Tissue segmentation: 
 
-The above two steps can be skipped, e.g. if you already have small sections of a H&E as JPEG tiles, or if you don't think there is segment tissue areas  
+The above two steps can be skipped, e.g. if you already have small sections of a H&E as JPEG tiles, or if you don't think there is any need to segment tissue areas. However, please note, tissue segmentation is a fast step that rids 
 
 * Cell detection: 
 * Cell classification: 
@@ -56,6 +56,7 @@ source deactivate CWS
 ```
 
 ## Post processsing
+
 A likely scenario is to see a lot of rubbish being detected outside the tissue regions. Simply because our algorithm . Though this should be taken care of using 
 
 
