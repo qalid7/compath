@@ -78,7 +78,15 @@ A likely scenario is to see a lot of rubbish being detected outside the tissue r
 
 Single-cell expert pathology annotations from the LATTICe-A cohort are provided under: test_data. This test dataset represents one of several external validations performed in the paper. 
 
-The R scripts is provided to regenerate single-cell accuracy results - you should be able to replicate Table S3 from the paper.   
+The R scripts is provided to re-generate single-cell accuracy results - you should be able to replicate Table S3 from the paper using:    
+
+* lattica_test_data/imgs: the original raw H&E tiles used for single-cell pathology annoations.
+
+* latticea_test_data/gt_celllabels: expert pathology annotations in the form of x,y coordinates. 
+* lattica_test_data/gt_annotated: pathology annotations visualised on the images. 
+
+* lattica_test_data/dl_celllabels: our final cell predictions from this pipeline, you should be able to get to these results using this repo and the 'imgs' data. 
+
 
 ## Multiplex IHC
 
