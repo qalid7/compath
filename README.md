@@ -12,19 +12,19 @@ If you use this pipeline or some of its steps, please cite:
 
 The steps can be further explained as follows: 
 
-* Tiling: to convert a raw microscopy image into 2000x2000 tiles.  
-* Tissue segmentation: 
+* Tiling: to convert a raw microscopy image into 2000x2000 JPEG tiles.  
+* Tissue segmentation: to segment viable tissue 
 
-The above two steps can be skipped, e.g. if you already have small sections of a H&E as JPEG tiles, or if you don't think there is any need to segment tissue areas. However, please note, tissue segmentation is a fast step that rids 
+The above two steps can be skipped, e.g. if you already have small sections of a H&E as JPEG tiles, or if you don't think there is any need to segment tissue areas. However, please note, tissue segmentation is a fast step that rids large unwanted tiles from a standard H&E to save time for the next two steps. 
 
-* Cell detection: 
+* Cell detection: identifying a cell nucleus  
 * Cell classification: 
 
-Both cell detection and classification algorithms contain pre processing routines. You can turn this off/on or modify it from: 
+Both cell detection and classification algorithms contain pre processing routines. You can turn this off/on or modify it from the main run script.  
 
 ## Trained models
 
-Trained models (checkpoint files) can be downloaded from [here](https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). You need to copy each 'checkpoint' folder from the dropbox link to the respective folder in this repositry (e.g. cell_class, etc). 
+Trained models (checkpoint files) can be downloaded from [here](https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). You need to copy each 'checkpoint' folder from the dropbox link to the corrosponding folder in this repositry (e.g. cell_class). 
 
 
 ## Python-TensorFlow virtual envs (linux/cluster) 
@@ -61,14 +61,14 @@ source deactivate CWS
 ```
 ## Example data
 
-Under data/example we provide a sample xx. This is to compare against your .
+Under data/example we provide sample tiles. This is to get you started. The aim should be to run both cell detection and classification and replicate the results as seen under example/results. 
 
-* example/data: 
-* example/results:  
+* example/data: raw tiled JPEGs, ready for cell detection and cell classification.
+* example/results: the output of this pipeline in the form of annotated images and cell coordinates. 
 
 ## Post processsing
 
-A likely scenario is to see a lot of rubbish being detected outside the tissue regions. Simply because our algorithm . Though this should be taken care of using 
+A likely scenario is to see a lot of rubbish being detected outside the tissue regions. Simply because our algorithm hasn't seen enough "negative" examples from a chohort other than Lung TRACERx. Though much of this rubbish should be avoided with tissue segmentation, however, we provide a simple MATLAB script for post processing (cleaning) under: post_proc. 
 
 
 ## Test data (LATTICe-A annotations) 
