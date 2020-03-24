@@ -68,7 +68,7 @@ Under data/example we provide sample tiles. This is to get you started. The aim 
 
 ## Post processsing
 
-A likely scenario is to see a lot of rubbish being detected outside the tissue regions. Simply because our algorithm hasn't seen enough "negative" examples from a chohort other than Lung TRACERx. Though much of this rubbish should be avoided with tissue segmentation, however, we provide a simple MATLAB script for post processing (cleaning) under: post_proc. 
+A likely scenario is to see a lot of rubbish being detected outside the tissue regions. This happens simply because our algorithm hasn't seen enough 'negative non-cell' events from a chohort other than Lung TRACERx. Though much of this rubbish should be avoided with tissue segmentation, however, we provide a simple MATLAB script for post processing (cleaning) under: post_proc. This script should also create a summary for all slides in one table: number and relative percentage of cells identified for each class. 
 
 
 ## Test data (LATTICe-A annotations) 
