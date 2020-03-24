@@ -22,10 +22,6 @@ The above two steps can be skipped, e.g. if you already have small sections of a
 
 Both cell detection and classification algorithms contain pre processing routines. You can turn this off/on or modify it from the main run script or sub matlab dir.  
 
-## H&E versus IHC
-
-By large, this pipeline is designed for H&E images. We do have 
-
 ## Trained models
 
 Trained models (checkpoint files) can be downloaded from [here](https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). You need to copy each 'checkpoint' folder from the dropbox link to the corrosponding folder in this repositry (e.g. cell_class). 
@@ -83,6 +79,10 @@ A likely scenario is to see a lot of rubbish being detected outside the tissue r
 Single-cell expert pathology annotations from the LATTICe-A cohort are provided under: test_data. This test dataset represents one of several external validations performed in the paper. 
 
 The R scripts is provided to regenerate single-cell accuracy results - you should be able to replicate Table S3 from the paper.   
+
+## Multiplex IHC
+
+By large, this pipeline is designed for H&E images as they make the bulk of our paper. We do provide checkpoint files for all steps in this pipeline trained for multiplex IHC images (CD8+, CD4+FOXP3-, CD4+FOXP3+; refer to Methods in the paper). However, depending on your IHC images (combination of colors, cytoplasmic/nuclear staining), the pipeline may need some modification or even a fresh training.  
 
 ## Training 
 
