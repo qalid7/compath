@@ -1,9 +1,9 @@
 # H&E-based single-cell identification pipeline
-Deep learning pipeline repository for our paper "xxxx" published in xxx. The pipeline accepts a standard H&E (e.g. ndpi format) and outputs  The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
+Deep learning pipeline repository for our paper "xxxxxxxxxxxxxxxx" published in xxxxxxxxxxxxxxxxxxxxx. The pipeline accepts a standard H&E (e.g. ndpi format) and outputs  The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
 
 ## Citation
 If you use this pipeline or some of its steps, please cite: 
-* AbdulJabbar, K. et al 2020 
+* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 ## Highlights 
 <p align="center">
@@ -13,14 +13,18 @@ If you use this pipeline or some of its steps, please cite:
 The steps can be further explained as follows: 
 
 * Tiling: to convert a raw microscopy image into 2000x2000 JPEG tiles.  
-* Tissue segmentation: to segment viable tissue 
+* Tissue segmentation: to segment viable tissue area from a H&E slide. 
 
 The above two steps can be skipped, e.g. if you already have small sections of a H&E as JPEG tiles, or if you don't think there is any need to segment tissue areas. However, please note, tissue segmentation is a fast step that rids large unwanted tiles from a standard H&E to save time for the next two steps. 
 
-* Cell detection: identifying a cell nucleus  
-* Cell classification: 
+* Cell detection: identifying cell nucleus, 
+* Cell classification: predicting the class of an identified cell (cancer, stromal, lymphocyte, other)
 
-Both cell detection and classification algorithms contain pre processing routines. You can turn this off/on or modify it from the main run script.  
+Both cell detection and classification algorithms contain pre processing routines. You can turn this off/on or modify it from the main run script or sub matlab dir.  
+
+## H&E versus IHC
+
+By large, this pipeline is designed for H&E images. We do have 
 
 ## Trained models
 
@@ -76,7 +80,9 @@ A likely scenario is to see a lot of rubbish being detected outside the tissue r
   <img height="150" src="https://github.com/qalid7/compath/blob/master/common/images/ann_data.png">
 </p>
 
-Single-cell pathology annotations from the LATTICe-A cohort are provided under data. This test dataset represents one of several external validations performed in the paper.  
+Single-cell expert pathology annotations from the LATTICe-A cohort are provided under: test_data. This test dataset represents one of several external validations performed in the paper. 
+
+The R scripts is provided to regenerate single-cell accuracy results - you should be able to replicate Table S3 from the paper.   
 
 ## Training 
 
