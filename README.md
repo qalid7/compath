@@ -94,6 +94,6 @@ By large, this pipeline is designed for H&E images as they make the bulk of our 
 
 ## Training 
 
-We highly recommend using our more recent version (updated codes, tf version 1.13) of this pipeline if you wish to train models from scratch. This will be provided in a seprate [repo](xxxxxxxxxxxxxxx). 
+Training codes are available for each step if you wish to train models from scratch. However, we highly recommend using our more recent version (updated codes, tf version 1.13) of this pipeline provided in a seprate [repo](xxxxxxxxxxxxxxx). 
 
 ## License 
