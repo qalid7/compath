@@ -36,8 +36,9 @@ module load anaconda/3/4.4.0
 conda create -n tfdavrosCPU1p3 python=3.5.4
 conda activate tfdavrosCPU1p3
 conda install scipy=0.19 pandas=0.20 numpy=1.13.1
+pip install /apps/tensorflow/tensorflow-1.3.0-cp35-cp35m-linux_x86_64.whl
 
-cd /apps/MATLAB/R2017b/extern/engines/python
+cd /apps/MATLAB/R2018b/extern/engines/python
 #replace your dir:
 python setup.py build --build-base="/home/dir/tmp" install
 pip install pillow==4.2.1 h5py==2.7.1
