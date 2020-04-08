@@ -1,5 +1,4 @@
 import CWS_generator as cws
-import czi_cws_generator as cws_czi
 import sys
 import os
 import glob
