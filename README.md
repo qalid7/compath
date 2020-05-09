@@ -1,7 +1,7 @@
 # H&E-based single-cell identification pipeline
 Deep learning pipeline repository for our paper "Geospatial immune variability illuminates differential evolution of  lung adenocarcinoma" published in Nature Medicine. This page also includes single-cell annotations data, examples and links to pre-trained AI models. 
 
-The pipeline accepts a standard H&E (e.g. ndpi format) and outputs  The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
+The pipeline accepts a standard H&E (e.g. ndpi format) and outputs xxxxxxxxxxxxxx The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
 
 ## Citation
 If you use this pipeline or some of its steps, please cite: 
