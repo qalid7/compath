@@ -24,6 +24,8 @@ The above two steps can be skipped, e.g. if you already have small sections of a
 
 Both cell detection and classification algorithms contain pre processing routines. You can turn this off/on or modify it from the main run script or sub matlab dir.  
 
+To execute, 
+
 ## Trained models
 
 Trained models (checkpoint files) can be downloaded from [here](https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). You need to copy each 'checkpoint' folder from the dropbox link to the corrosponding folder in this repositry (e.g. cell_class). 
