@@ -89,8 +89,7 @@ The R scripts is provided to re-generate single-cell accuracy results - you shou
 
 * latticea_test_data/imgs: the original raw H&E tiles used for single-cell pathology annoations.
 
-* latticea_test_data/gt_celllabels: expert pathology annotations in the form of x,y coordinates. 
-* latticea_test_data/gt_annotated: pathology annotations visualised on the images (for colors look at Fig. 1 in the paper). 
+* latticea_test_data/gt_celllabels: expert pathology annotations in the form of class, and x,y coordinates. 
 
 * latticea_test_data/dl_celllabels: our final cell predictions from this pipeline, you should be able to get to these results using this repo and the 'imgs' data. 
 
