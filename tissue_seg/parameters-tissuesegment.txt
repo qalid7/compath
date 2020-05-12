@@ -1,4 +1,4 @@
-results_dir /mnt/scratch/DMP/COPAINGE/tracerx/tracerx100/IHC_diagnostic/results/tissue_segmentation
+results_dir xxx
 file_name_pattern *.ndpi
-date 20171128
-exp_dir /mnt/scratch/users/molecpath/sraza/scripts/MyCodes/TracerX/tissue_segmentation/20171110-TissueSegmentation/ExpDir-HE
+date xxxx
+exp_dir ~/ExpDir-HE

@@ -1,9 +1,9 @@
-exp_dir /mnt/scratch/users/molecpath/sraza/scripts/MyCodes/TracerX/classification/20171019-SCCNNClassifier/ExpDir-HE-4class
-results_dir /mnt/scratch/DMP/COPAINGE/tracerx/John_Variable_thickness/results/classification
+exp_dir ~/ExpDir-HE-4class
+results_dir /classification
 file_name_pattern *.ndpi
-date 20171129
+date xxxx
 in_feat_dim 3
-detection_results_path /mnt/scratch/DMP/COPAINGE/tracerx/John_Variable_thickness/results/detection/20171128
-tissue_segment_dir /mnt/scratch/DMP/COPAINGE/tracerx/John_Variable_thickness/results/tissue_segmentation/20171031
+detection_results_path xxxx
+tissue_segment_dir xxxx
 num_of_classes 4
 color_code_file HE_Fib_Lym_Tum_Others.csv
