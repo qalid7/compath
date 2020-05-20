@@ -30,8 +30,6 @@ To execute, xxxxxxxxxxxxxxxxxxx
 
 ## Trained models
 
-Trained models (checkpoint files) can be downloaded from [here](https://www.dropbox.com/sh/98qaunytnm7u2zo/AABO08G1gvT9jz7KDhiB5BO9a?dl=0). You need to copy each 'checkpoint' folder from the dropbox link to the corrosponding folder in this repositry (e.g. cell_class). 
-
 
 ## Python-TensorFlow virtual envs (Linux) 
 
