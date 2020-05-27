@@ -3,7 +3,7 @@ Deep learning pipeline repository for our paper "Geospatial immune variability i
 
 In addition to a combination of Python, MATLAB and R scripts, this repository also includes, example H&E images and their final outputs and single-cell annotations data for external cohort testing. 
 
-The pipeline accepts a standard H&E (e.g. ndpi format) and outputs a spatial map, where all cancer, lymphocyte and stromal cells can be recognized. The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
+The pipeline accepts a standard H&E (e.g. ndpi format) and outputs a spatial map, where all cancer, lymphocyte and stromal cells can be recognized. The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented with different parameters in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
 
 ## Citation
 If you use this pipeline or some of its steps, or if you use the attached annotation data, please cite: 
