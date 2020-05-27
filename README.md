@@ -7,7 +7,7 @@ The pipeline accepts a standard H&E (e.g. ndpi format) and outputs a spatial map
 
 ## Citation
 If you use this pipeline or some of its steps, or if you use the attached annotation data or checkpoint files, please cite: 
-* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+* AbdulJabbar, K. et al. Geospatial immune variability illuminates differential evolution of lung adenocarcinoma. Nature Medicine (2020). doi: 10.1038/s41591-020-0900-x
 
 ## Highlights 
 <p align="center">
