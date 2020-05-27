@@ -28,9 +28,6 @@ Both cell detection and classification algorithms contain pre processing routine
 
 To execute, xxxxxxxxxxxxxxxxxxx
 
-## Trained models
-
-
 ## Python-TensorFlow virtual envs (Linux) 
 
 * For cell detection and classification: 
