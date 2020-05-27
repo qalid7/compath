@@ -63,7 +63,7 @@ source deactivate CWS
 ```
 ## Example data
 
-Under data/example we provide sample tiles. This is to get you started. The aim should be to run both cell detection and classification and replicate the results as seen under example/results. 
+Under data/example we provide sample tiles. The aim should be to run both cell detection and classification and replicate the results as seen under example/results. 
 
 * example/data: raw tiled JPEGs, ready for cell detection and cell classification.
 * example/results: the output of this pipeline in the form of annotated images and cell coordinates. 
@@ -91,8 +91,8 @@ The R scripts is provided to re-generate single-cell accuracy results - you shou
 
 ## Multiplex IHC
 
-By large, this pipeline is designed for H&E images as they make the bulk of our paper. For multiplex IHC images (CD8+, CD4+FOXP3-, CD4+FOXP3+; refer to Methods in the paper). Depending on your IHC images (combination of colors, cytoplasmic/nuclear staining), the pipeline may need some modification. 
+By large, this pipeline is designed for H&E images as they make the bulk of our paper. For multiplex IHC images (CD8-CD4-FOXP3); refer to Methods in the paper. Depending on your IHC images (combination of colors, cytoplasmic/nuclear staining), the pipeline may need some modification. 
 
 ## Training 
 
-Training codes are available for each step of this pipeline. We will update this repo with a more recent version (updated codes, tf version 1.13) of this pipeline. 
+Training codes are available for each step of this pipeline. We aim to update this repo with a more recent version (updated codes, tf version 1.13).  
