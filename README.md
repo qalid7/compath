@@ -1,9 +1,9 @@
 # H&E-based single-cell identification pipeline
-Deep learning pipeline repository for our paper "Geospatial immune variability illuminates differential evolution of  lung adenocarcinoma" published in Nature Medicine. 
+Deep learning pipeline repository for our paper "Geospatial immune variability illuminates differential evolution of lung adenocarcinoma" published in Nature Medicine. 
 
-In addition to a combination of Python, MATLAB and R scripts, this repository also includes, permenannt links to pre-trained AI models (checkpoint files), example H&E images and their final outputs to get you started and single-cell annotations data for external cohort testing. 
+In addition to a combination of Python, MATLAB and R scripts, this repository also includes, example H&E images and their final outputs to get you started and single-cell annotations data for external cohort testing. 
 
-The pipeline accepts a standard H&E (e.g. ndpi format) and outputs xxxxxxxxxxxxxx The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
+The pipeline accepts a standard H&E (e.g. ndpi format) and outputs a spatial map, where all cancer, lymphocyte and stromal cells can be recognized. The SCCNN method was first published in doi.org/10.1109/TMI.2016.2525803 but re-implemented in Python-TensorFlow here. Tissue segmentation is based on MicroNet: doi.org/10.1016/j.media.2018.12.003. 
 
 ## Citation
 If you use this pipeline or some of its steps, or if you use the attached annotation data or checkpoint files, please cite: 
@@ -26,7 +26,7 @@ The above two steps can be skipped, e.g. if you already have small sections of a
 
 Both cell detection and classification algorithms contain pre processing routines. You can turn this off/on or modify it from the main run script or sub matlab dir.  
 
-To execute, xxxxxxxxxxxxxxxxxxx
+To execute, you need the below Conda virtual environments. 
 
 ## Python-TensorFlow virtual envs (Linux) 
 
@@ -86,13 +86,13 @@ The R scripts is provided to re-generate single-cell accuracy results - you shou
 
 * latticea_test_data/gt_celllabels: expert pathology annotations in the form of class, and x,y coordinates. 
 
-* latticea_test_data/dl_celllabels: our final cell predictions from this pipeline, you should be able to get to these results using this repo and the 'imgs' data. 
+* latticea_test_data/dl_celllabels: our final cell predictions from this pipeline.
 
 
 ## Multiplex IHC
 
-By large, this pipeline is designed for H&E images as they make the bulk of our paper. We do provide checkpoint files for all steps in this pipeline trained for multiplex IHC images (CD8+, CD4+FOXP3-, CD4+FOXP3+; refer to Methods in the paper). However, depending on your IHC images (combination of colors, cytoplasmic/nuclear staining), the pipeline may need some modification or even a fresh training.  
+By large, this pipeline is designed for H&E images as they make the bulk of our paper. For multiplex IHC images (CD8+, CD4+FOXP3-, CD4+FOXP3+; refer to Methods in the paper). Depending on your IHC images (combination of colors, cytoplasmic/nuclear staining), the pipeline may need some modification. 
 
 ## Training 
 
-Training codes are available for each step if you wish to train models from scratch. However, we highly recommend using our more recent version (updated codes, tf version 1.13) of this pipeline provided in a seprate [repo](xxxxxxxxxxxxxxx). 
+Training codes are available for each step of this pipeline. We will update this repo with a more recent version (updated codes, tf version 1.13) of this pipeline. 
